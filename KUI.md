@@ -42,9 +42,9 @@ with page(10, 5, id="main", text=(绿色, f32x16, 居中)):
     text("自定义界面支持多种控件", (2, 2, 1, 3), 黄色)
     text("字体支持多种颜色", (3, 2, 1, 3), 紫色)
 
-    menu("按此处", "AnotherPageID")
+    menu("切换页面", "AnotherPageID")
 
-# 这是另一个页面，id为"AnotherPageID"，共有5行5列，text为此页控件设定了默认属性
+# 这是另一个页面，id为"AnotherPageID"，共5行5列，text参数为此页控件设定了默认属性
 with page(5, 5, id="AnotherPageID", text=(红色, f32x16, 居中)):
     text("自定义界面可以包含多个页面", (3, 2, 1, 3))
 
@@ -467,7 +467,7 @@ default_data_attr(黄色, f20x10)   #表示所有数据的默认颜色为黄色�
 
 - title参数取值可以为True和False(默认为False)，为True时自定义界面的标题栏不显示，界面最大化；为False时显示标题栏
 ```python
-set_size(width, height, titile=True) #目前支持800X480,600X480,800X600, 默认为800X600，不显示标题栏
+set_size(titile=True) #不显示标题栏
 ```
 
 ## 表达式规则
